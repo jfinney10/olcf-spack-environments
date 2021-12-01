@@ -40,6 +40,8 @@ spack:
     - r
     - r@4.0.0
     # - ferret ^hdf5~mpi+cxx+fortran ^netcdf-c~mpi~parallel-netcdf ^netcdf-fortran
+    - ferret@7.4.4 ^hdf5~mpi+cxx+fortran ^netcdf-c~mpi~parallel-netcdf ^netcdf-fortran
+    #- ferret@7.4.4 ^netcdf-c~parallel-netcdf # added for ticket https://jira.ccs.ornl.gov/browse/OLCFSW-143, uses olcf package
     - cdo+hdf5+netcdf ^hdf5~mpi+cxx+fortran ^fftw~mpi+openmp ^netcdf-c~mpi~parallel-netcdf
     - sbt
     - spark+hadoop

@@ -735,6 +735,10 @@
   {
    "hash": "tgsuoux3ct2aohspcleskglal2pmzcp3",
    "spec": "tau%intel@20.0.4+mpi+openmp ^cmake@3.16.2"
+  },
+  {
+   "hash": "4b2upozgwyqf554oj2ksmukhech47bgk",
+   "spec": "ferret@7.4.4%gcc@8.3.1 ^hdf5+cxx+fortran~mpi ^netcdf-c~mpi~parallel-netcdf ^netcdf-fortran"
   }
  ],
  "concrete_specs": {
@@ -33054,6 +33058,118 @@
      }
     },
     "hash": "2o4xmctfo6a7fn6yv5bdvoeaiviu5sg4"
+   }
+  },
+  "4b2upozgwyqf554oj2ksmukhech47bgk": {
+   "ferret": {
+    "version": "7.4.4",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "rhel8",
+     "target": "x86_64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "8.3.1"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "datasets": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "curl": {
+      "hash": "xrg2crs7mb5epqbyinv4iejaxsecw4jg",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "hdf5": {
+      "hash": "lde2wqraokyztdpug3j3xaqvypkwd46j",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "libx11": {
+      "hash": "spezndilyg3ekuouauypgovqamiqvumz",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "netcdf-c": {
+      "hash": "kbmao33mrq6hxl4klk7orifaocg2xaok",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "netcdf-fortran": {
+      "hash": "m7p7tnzhgefjl6xm276z33wagv5gwqqe",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "readline": {
+      "hash": "ohpizeyca2wgi5san6owihucuw4thbsx",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "zlib": {
+      "hash": "xqjeqtupcfqqqlaw5ehjlfjjly7zoe3b",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "xuitaw7bgl2mvcr364m6cys22636tbje"
+   }
+  },
+  "m7p7tnzhgefjl6xm276z33wagv5gwqqe": {
+   "netcdf-fortran": {
+    "version": "4.5.3",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "rhel8",
+     "target": "x86_64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "8.3.1"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "doc": false,
+     "pic": true,
+     "shared": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "netcdf-c": {
+      "hash": "kbmao33mrq6hxl4klk7orifaocg2xaok",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "qmp3oumepntjru43f3f7qesqx6mmqbcj"
    }
   }
  }
