@@ -233,11 +233,11 @@ spack:
       compiler: []
     slurm:
       buildable: false
-      version: [20-02-0-0]
+      version: [20.02.7-1]
       target: []
       providers: {}
       externals:
-      - spec: slurm@20-02-0-0
+      - spec: slurm@20.02.7-1
         prefix: /usr
       compiler: []
     m4:
@@ -255,7 +255,7 @@ spack:
       target: []
       providers: {}
       externals:
-      - spec: ucx@1.8.0+thread_multiple
+      - spec: ucx@1.10.0+thread_multiple
         prefix: /usr
       compiler: []
       variants: +thread_multiple
@@ -268,13 +268,13 @@ spack:
       target: []
       compiler: []
       providers: {}
-    rdma-core:
+    rdma-core: #rdma-core-52mlnx1-1.53100
       buildable: false
-      version: [28.0]
+      version: [32.0.52mlnx1]
       target: []
       providers: {}
       externals:
-      - spec: rdma-core@28.0
+      - spec: rdma-core@32.0.52mlnx1
         prefix: /usr
       compiler: []
     libfabric:
